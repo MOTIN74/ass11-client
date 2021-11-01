@@ -1,0 +1,14 @@
+.banner-image {
+    background-image: url("https://image.freepik.com/free-photo/beautiful-girl-standing-viewpoint-koh-nangyuan-island-near-koh-tao-island-surat-thani-thailand_335224-1094.jpg");
+    height: 70vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-top:20px;
+    margin-bottom:30px;
+  }
+   h1{
+    color:lightcoral ;
+  }
