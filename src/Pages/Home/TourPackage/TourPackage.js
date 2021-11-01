@@ -7,7 +7,7 @@ const TourPackage = () => {
   const [packages,setPakages] = useState([])
 
   useEffect(()=>{
-    fetch('http://localhost:7000/card')
+    fetch('https://powerful-bayou-41697.herokuapp.com/card')
     .then(res => res.json())
     .then(data => setPakages(data))
   },[])

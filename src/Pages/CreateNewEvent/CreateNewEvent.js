@@ -16,7 +16,7 @@ const CreateNewEvent = () => {
   }
 
   const handleEvent = e =>{
-    fetch('http://localhost:7000/card',{
+    fetch('https://powerful-bayou-41697.herokuapp.com/card',{
       method:'POST',
       headers:{'content-type':'application/json'},
       body:JSON.stringify(updateEvent)

@@ -9,7 +9,7 @@ const MyOrder = () => {
   const [orders,setOrders] = useState([])
 
   useEffect(()=>{
-    fetch('http://localhost:7000/users')
+    fetch('https://powerful-bayou-41697.herokuapp.com/users')
     .then(res => res.json())
     .then(data => {
       const myOrder = data.filter(order => order.email === user.email)
@@ -21,7 +21,7 @@ const MyOrder = () => {
   const cancelBtn = id => {
     const confirm = window.confirm('Are you sure wanna remove this item?')
     if (confirm) {
-      fetch(`http://localhost:7000/users/${id}`,{
+      fetch(`https://powerful-bayou-41697.herokuapp.com/users/${id}`,{
         method:'DELETE'
     })
     .then(res => res.json())

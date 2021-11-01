@@ -6,7 +6,7 @@ const Manage = () => {
     const [orders,setOrders] = useState([])
   
     useEffect(()=>{
-      fetch('http://localhost:7000/users')
+      fetch('https://powerful-bayou-41697.herokuapp.com/users')
       .then(res => res.json())
       .then(data => setOrders(data))
     },[])
@@ -16,7 +16,7 @@ const Manage = () => {
     const deleteBtn = id => {
         const confirm = window.confirm('are you sure to delete this ?')
         if (confirm) {
-            fetch(`http://localhost:7000/users/${id}`,{
+            fetch(`https://powerful-bayou-41697.herokuapp.com/users/${id}`,{
             method:'DELETE'
         })
         .then(res => res.json())
