@@ -11,7 +11,7 @@ const Selected = () => {
     const [newUser,setNewUser]= useState({})
 
     useEffect(()=>{
-        fetch('https://powerful-bayou-41697.herokuapp.com//card')
+        fetch('https://powerful-bayou-41697.herokuapp.com/card')
         .then(res => res.json())
         .then(data => {
             const newSelected = data.find(sec => sec._id === id)
