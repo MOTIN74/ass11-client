@@ -64,7 +64,7 @@ const Footer = () => {
         </div>
         <hr />
         <div className="botton text-center">
-          <small>© 2021 Travelling  by KHAN. All Rights Reserved.</small>
+          <small>© 2021-2050 Travelling  by KHAN. All Rights Reserved.</small>
         </div>
       </div>
     </div>
